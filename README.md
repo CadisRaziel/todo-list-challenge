@@ -3,7 +3,6 @@
 
 ## API Endpoints
 
-Para fazer as requisições HTTP abaixo, foi utilizada a ferramenta [httpie](https://httpie.io):
 
 - Criar Tarefa 
 ```
