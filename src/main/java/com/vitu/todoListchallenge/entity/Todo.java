@@ -1,6 +1,7 @@
 package com.vitu.todoListchallenge.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "todos")
@@ -8,7 +9,10 @@ public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //gera de forma sequencial
     private Long id;
+
+    @NotBlank
     private String name;
+    @NotBlank
     private String description;
     private boolean done;
     private int priority;
